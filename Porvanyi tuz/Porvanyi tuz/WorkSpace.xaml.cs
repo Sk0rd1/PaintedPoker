@@ -214,7 +214,7 @@ namespace Porvanyi_tuz
                 }
                 else if (valueIn[i] < valueOut[i])
                 {
-                    thisGameResult[i] = valueIn[i];
+                    thisGameResult[i] = valueOut[i];
                 }
                 else
                 {
@@ -322,6 +322,9 @@ namespace Porvanyi_tuz
             gridTable.IsVisible = true;
             lineTable.IsVisible = true;
             labelTable.IsVisible = true;
+
+            gridTable.Children.Clear();
+            newResults.Clear();
 
             for (int i = 0; i < numOfPlayers; i++)
             {

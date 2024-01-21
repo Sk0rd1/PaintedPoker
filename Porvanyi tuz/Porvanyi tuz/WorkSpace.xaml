@@ -42,7 +42,7 @@
             <Grid x:Name="gridTable" IsVisible="True">
 
             </Grid>
-            <Button x:Name="bSaveTable" IsVisible="True" Text="Зберегти результат" Clicked="SaveTable" FontSize="15" TextColor="White" BorderColor="#1870DB" BorderWidth="1" BackgroundColor="#3896DB" CornerRadius="10" Margin="0, 15, 0, 0" HorizontalOptions="Center"/>
+            <Button x:Name="bSaveTable" IsVisible="True" Text="Зберегти результат" Clicked="SaveTable" FontSize="15" TextColor="White" BorderColor="#1870DB" BorderWidth="1" BackgroundColor="#3896DB" CornerRadius="10" Margin="0, 15, 0, 20" HorizontalOptions="Center"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
