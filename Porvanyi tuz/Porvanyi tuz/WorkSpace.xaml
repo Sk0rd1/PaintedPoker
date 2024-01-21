@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Porvanyi_tuz.WorkSpace">
+    <ContentPage.Content>
+        <ScrollView x:Name="scrollView">
+            <StackLayout>
+                <Label Text="Таблиця для заповнення" FontSize="20" TextColor="Gray" HorizontalOptions="Center" Margin="0, 30, 0, 15"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Ім'я" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="Black" Margin="50, 0, 0, 0"/>
+                <Label Text="Замовлено" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="Black" Margin="40, 0, 40, 0"/>
+                <Label Text="Взято" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="Black" Margin="0, 0, 0, 0"/>
+            </StackLayout>
+            <Line x:Name="firstLine" StrokeThickness="3" Stroke="Black"/>
+
+            <Grid x:Name="gridPlayers" Margin="15, 0, 15, 0">
+
+            </Grid>
+
+            <StackLayout Orientation="Horizontal" Margin="30, 20, 10, 0">
+                <Label Text="№ гри:" TextColor="Black" FontSize="17"/>
+                <Label x:Name="labelNumGame" Text="" TextColor="Black" FontSize="17"/>
+                <Label Text="  К-сть карт:" TextColor="Black" FontSize="17"/>
+                <Label x:Name="labelNumCard" Text="" TextColor="Black" FontSize="17" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Margin="10, 20, 10, 0">
+                <Button Text="Додати запис" Clicked="AddRecord" FontSize="15" TextColor="White" BorderColor="#1870DB" BorderWidth="1" BackgroundColor="#3896DB" CornerRadius="10" Margin="0, 0, 5, 0"/>
+            </StackLayout>
+
+
+            <Label x:Name="labelResult" Text="Результати" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="Black" IsVisible="False" Margin="0, 50, 0, 5"/>
+            <Line x:Name="lineResult" StrokeThickness="3" Stroke="Black" IsVisible="False"/>
+            <Grid x:Name="gridResult">
+
+            </Grid>
+
+            <Button x:Name="bOpenTable" IsVisible="True" Text="Змінити результати" Clicked="OpenTable" FontSize="15" TextColor="White" BorderColor="#1870DB" BorderWidth="1" BackgroundColor="#3896DB" CornerRadius="10" Margin="0, 30, 0, 0" HorizontalOptions="Center"/>
+
+            <Label x:Name="labelTable" Text="Зміна результатів" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="Black" IsVisible="True" Margin="0, 50, 0, 5"/>
+            <Line x:Name="lineTable" StrokeThickness="3" Stroke="Black" IsVisible="False" Margin="0, 0, 0, 10"/>
+            <Grid x:Name="gridTable" IsVisible="True">
+
+            </Grid>
+            <Button x:Name="bSaveTable" IsVisible="True" Text="Зберегти результат" Clicked="SaveTable" FontSize="15" TextColor="White" BorderColor="#1870DB" BorderWidth="1" BackgroundColor="#3896DB" CornerRadius="10" Margin="0, 15, 0, 0" HorizontalOptions="Center"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

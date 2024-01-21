@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Porvanyi_tuz.MainPage">
+
+    <StackLayout>
+        <Label Text="РОЗПИСНИЙ ПОКЕР" FontSize="45" TextColor="White" BackgroundColor="#1888DB" FontFamily="Impact" HorizontalTextAlignment="Center" Padding="0,30,0,30"/>
+        <Label Text="Введіть імена гравців(2-8)" FontSize="20" TextColor="Gray" HorizontalOptions="Center" Margin="0, 30, 0, 15"/>
+        <Grid x:Name="gridPlayers" Margin="15, 0, 15, 0">
+
+        </Grid>
+
+        <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Margin="10, 20, 10, 0">
+            <Button Text="Додати гравця" Clicked="AddPlayer" FontSize="15" TextColor="White" BorderColor="#1870DB" BorderWidth="1" BackgroundColor="#3896DB" CornerRadius="10" Margin="0, 0, 5, 0"/>
+            <Button Text="   Почати гру   " Clicked="OpenOnButton" FontSize="15" TextColor="White" BorderColor="#1870DB" BorderWidth="1" BackgroundColor="#3896DB" CornerRadius="10" Margin="5, 0, 0, 0"/>
+        </StackLayout>
+
+        <Label Text="t.me/nag1bator228" FontSize="10" TextColor="LightSlateGray" HorizontalOptions="End" VerticalOptions="EndAndExpand"/>
+    </StackLayout>
+
+</ContentPage>
+
