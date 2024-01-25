@@ -1,5 +1,5 @@
 # PaintedPoker
- Мобільний додаток для підрахунку результатів в грі розписний покер.
+ A mobile application for calculating the results in the game of painted poker.
 
 ![Image alt](https://github.com/Sk0rd1/ImagesForReadMe/blob/main/PaintedPoker/1.jpg)
 
